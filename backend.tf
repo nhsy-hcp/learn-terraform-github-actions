@@ -1,12 +1,12 @@
-#terraform {
-#  cloud {
-#    organization = "nhsy-hcp-org"
-#
-#    workspaces {
-#      name = "learn-terraform-github-actions"
-#    }
-#  }
-#}
 terraform {
-  backend "remote" {}
+  cloud {
+    organization = "nhsy-hcp-org"
+
+    workspaces {
+      name = "learn-terraform-github-actions"
+    }
+  }
 }
+#terraform {
+#  backend "remote" {}
+#}
